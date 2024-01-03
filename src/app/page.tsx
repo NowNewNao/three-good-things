@@ -1,3 +1,10 @@
+import { Header } from "@/app/ui/atoms/Header";
+import { AppGlobalHeader } from "@/app/ui/layout/AppGlobalLayout";
+
 export default function Home() {
-	return <main>Hello World</main>;
+	return (
+		<AppGlobalHeader>
+			<Header>Hello</Header>
+		</AppGlobalHeader>
+	);
 }
