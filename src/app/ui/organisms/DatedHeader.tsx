@@ -1,13 +1,10 @@
 "use client";
 import { Header } from "@/app/ui/atoms/Header";
+import { MonthlyCalendar } from "@/app/ui/atoms/MonthlyCalendar";
 import { FC } from "react";
 
-type Props = {
-	today: string;
-};
-
-export const DatedHeader: FC<Props> = ({ today }) => (
+export const DatedHeader: FC = () => (
 	<Header>
-		<>{today}</>
+		<MonthlyCalendar />
 	</Header>
 );
