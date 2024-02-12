@@ -1,29 +1,34 @@
 {
-  "name": "three-good-things",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/react-datepicker": "^4.19.5",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-datepicker": "^4.25.0",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  }
+	"name": "three-good-things",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "FIRESTORE_EMULATOR_HOST=localhost:8080 next dev",
+		"lint": "next lint",
+		"run-emulator": "firebase --project='test' emulators:start"
+	},
+	"dependencies": {
+		"@types/react-datepicker": "^4.19.5",
+		"axios": "^1.6.7",
+		"firebase": "^10.8.0",
+		"firebase-admin": "^12.0.0",
+		"next": "14.0.4",
+		"react": "^18",
+		"react-datepicker": "^4.25.0",
+		"react-dom": "^18"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"autoprefixer": "^10.0.1",
+		"eslint": "^8",
+		"eslint-config-next": "14.0.4",
+		"firebase-functions": "^4.7.0",
+		"postcss": "^8",
+		"tailwindcss": "^3.3.0",
+		"typescript": "^5"
+	}
 }
